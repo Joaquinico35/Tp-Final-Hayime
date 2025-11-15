@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hayime-TpFinal</title>
+<link href="estilos.css" rel="stylesheet" type="text/css">
+<link href="Jquery/jquery-ui.css" rel="stylesheet">
+</head>
+
+<body>
+	
+<div id="contenedor"> <!--abre contenedor-->
+<div id="encabezado"> <!-- abre encabezado-->
+	Inteligencia Artificial
+</div> <!--cierra encabezado-->
+	
+<div id="botonera"> <!--abre botonera-->
+    <a href="index.html" class="boton">Inicio</a>
+    <a href="conceptos.html" class="boton">Conceptos</a>
+    <a href="aplicaciones.html" class="boton">Aplicaciones</a>
+    <a href="galeria.html" class="boton">Galería</a>
+	<a href="contacto.html" class="boton">Contacto</a>
+</div> <!--cierra botonera-->
+
+<div id="centro"> <!--abre centro-->
+<h2 class="demoHeaders">Aplicaciones Prácticas</h2>
+<div id="tabs"> <!--abre tabs-->
+	<ul>
+		<li><a href="#tabs-1">Medicina y Salud</a></li>
+		<li><a href="#tabs-2">Asistentes y Hogar</a></li>
+		<li><a href="#tabs-3">Arte y Creatividad</a></li>
+		<li><a href="#tabs-4">Industria y Logística</a></li>
+	</ul>
+
+	<div id="tabs-1">
+		<div class="textos">
+			<img src="img/1 tabs.png" width="500" height="300" alt="IA en Medicina"/>
+			<p>En el sector salud, la IA está revolucionando el diagnóstico. Los algoritmos de Deep Learning pueden analizar imágenes médicas como radiografías, resonancias magnéticas y tomografías con una precisión que a menudo supera al ojo humano. Esto permite la detección temprana de enfermedades como el cáncer o la retinopatía diabética, salvando vidas y optimizando los flujos de trabajo en los hospitales.</p>
+		</div> <!--cierra class textos-->
+	</div> <!--cierra tabs-1-->
+	<div id="tabs-2">
+		<div class="textos">
+			<img src="img/2 tabs.png" width="500" height="300" alt="Asistentes virtuales"/>
+			<p>Los asistentes virtuales como Siri, Alexa y Google Assistant son una de las aplicaciones más visibles de la IA. Utilizan Procesamiento del Lenguaje Natural (PLN) para entender comandos de voz y ejecutar tareas. En el hogar, la IA optimiza el consumo de energía en termostatos inteligentes, gestiona sistemas de seguridad y personaliza la experiencia de entretenimiento, aprendiendo de las rutinas y preferencias del usuario.</p>
+		</div> <!--cierra class textos-->
+	</div> <!-- cierra tabs-2-->
+	<div id="tabs-3"> <!--abre tabs-3-->
+		<div class="textos"> <!--abre class textos-->
+			<img src="img/3 tabs.png" width="500" height="300" alt="IA generando arte"/>
+			<p>La IA Generativa ha irrumpido en el mundo creativo. Modelos como DALL-E o Midjourney pueden crear imágenes fotorrealistas y obras de arte abstractas a partir de simples descripciones de texto. En la música, la IA puede componer piezas originales, mientras que en los videojuegos, se utiliza para crear mundos más dinámicos y personajes (NPCs) con comportamientos realistas e impredecibles.</p>
+		</div> <!--cierra class textos-->
+	</div> <!--cierra tabs-3-->
+	<div id="tabs-4">
+		<div class="textos">
+			<img src="img/04 tabs.png" width="500" height="300" alt="Robótica en industria"/>
+			<p>La "Industria 4.0" depende en gran medida de la IA. En las fábricas, los robots inteligentes ensamblan productos con precisión milimétrica y realizan controles de calidad en tiempo real. En logística, la IA optimiza las rutas de entrega, gestiona inventarios de forma autónoma en grandes almacenes y predice la demanda para evitar roturas de stock, haciendo toda la cadena de suministro más eficiente.</p>
+		</div> <!--cierra class textos-->
+	</div> <!--cierra tabs-4-->
+</div> <!--cierra tabs-->
+<script src="Jquery/external/jquery/jquery.js"></script>
+<script src="Jquery/jquery-ui.js"></script>
+<script>
+$( "#tabs" ).tabs();
+</script>
+</div> <!--cierra centro -->
+<div id="pie">Hayime Joaquín</div> <!--cierra pie-->
+</div> <!--cierra contenedor-->
+</body>
+</html>

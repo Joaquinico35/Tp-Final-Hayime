@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hayime-TpFinal</title>
+<link href="estilos.css" rel="stylesheet" type="text/css">
+<link href="Jquery/jquery-ui.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	
+<div id="contenedor"> 
+<div id="encabezado"> Inteligencia Artificial </div> 
+<div id="botonera"> <a href="index.html" class="boton">Inicio</a>
+    <a href="conceptos.html" class="boton">Conceptos</a>
+    <a href="aplicaciones.html" class="boton">Aplicaciones</a>
+    <a href="galeria.html" class="boton">Galería</a>
+	<a href="contactos.html" class="boton">Contacto</a>
+</div> 
+<div id="centro"> 
+<h2 class="demoHeaders" style="margin-bottom: 30px;">Galería de Imágenes</h2>
+
+	<div id="galeria-tabs">
+		
+		<div id="img-1">
+			<img src="Slider/img/landscape/06.png" alt="Imagen de IA 1">
+		</div>
+		<div id="img-2">
+			<img src="Slider/img/landscape/08.jpg" alt="Imagen de IA 2">
+		</div>
+		<div id="img-3">
+			<img src="Slider/img/landscape/10.png" alt="Imagen de IA 3">
+		</div>
+		<div id="img-4">
+			<img src="Slider/img/landscape/12.png" alt="Imagen de IA 4">
+		</div>
+		<div id="img-5">
+			<img src="Slider/img/landscape/14.png" alt="Imagen de IA 5">
+		</div>
+		<div id="img-6">
+			<img src="Slider/img/landscape/16.png" alt="Imagen de IA 6">
+		</div>
+		
+		<ul>
+			<li>
+				<a href="#img-1">
+					<img src="Slider/img/landscape/07.png" alt="Thumbnail 1" width="100">
+				</a>
+			</li>
+			<li>
+				<a href="#img-2">
+					<img src="Slider/img/landscape/09.png" alt="Thumbnail 2" width="100">
+				</a>
+			</li>
+			<li>
+				<a href="#img-3">
+					<img src="Slider/img/landscape/11.png" alt="Thumbnail 3" width="100">
+				</a>
+			</li>
+			<li>
+				<a href="#img-4">
+					<img src="Slider/img/landscape/13.png" alt="Thumbnail 4" width="100">
+				</a>
+			</li>
+			<li>
+				<a href="#img-5">
+					<img src="Slider/img/landscape/15.png" alt="Thumbnail 5" width="100">
+				</a>
+			</li>
+			<li>
+				<a href="#img-6">
+					<img src="Slider/img/landscape/17.png" alt="Thumbnail 6" width="100">
+				</a>
+			</li>
+		</ul>
+
+	</div>
+</div> 
+<div id="pie">Hayime Joaquín</div> 
+</div> 	
+<script src="Jquery/external/jquery/jquery.js"></script>
+<script src="Jquery/jquery-ui.js"></script>
+
+<script>
+$( function() {
+	
+	var misTabs = $( "#galeria-tabs" ).tabs({
+		show: { effect: "fadeIn", duration: 800 },
+		hide: { effect: "fadeOut", duration: 800 }
+	});
+
+
+	setInterval(function() {
+		
+		var pestañaActiva = misTabs.tabs("option", "active");
+		
+		var totalPestañas = misTabs.find("ul li").length;
+		
+		var siguientePestaña = (pestañaActiva + 1) % totalPestañas;
+		
+		misTabs.tabs("option", "active", siguientePestaña);
+		
+	}, 3000); 
+
+} );
+</script>
+</body>
+</html>
